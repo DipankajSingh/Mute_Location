@@ -30,8 +30,10 @@ android {
 
 dependencies {
     def room_version = "2.6.1"
+    def work_version = "2.9.1"
 
-    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.work:work-runtime:$work_version"
+    implementation libs.room.runtime
     annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation 'com.google.android.gms:play-services-location:21.3.0'
     implementation libs.appcompat
